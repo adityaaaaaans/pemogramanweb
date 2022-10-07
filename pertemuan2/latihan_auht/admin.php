@@ -1,3 +1,11 @@
+<?php
+session_start();
+// cek apakah ada username
+if(!isset($_SESSION['username'])){
+    header('Location:login-page.php');
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img4.webp" alt="" width="50" height="50" class="me-2">
+                <img src="Navigasi/img4.webp" alt="" width="50" height="50" class="me-2">
                 Adtyans <strong>Store</strong>
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +53,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Masuk</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.php">logout</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,21 +66,21 @@
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img1.jpg" class="d-block w-100" alt="..." height="800">
+            <img src="Navigasi/img1.jpg" class="d-block w-100" alt="..." height="800">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img2.webp" class="d-block w-100" alt="..." height="800">
+            <img src="Navigasi/img2.webp" class="d-block w-100" alt="..." height="800">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img3.jpg" class="d-block w-100" alt="..." height="800">
+            <img src="Navigasi/img3.jpg" class="d-block w-100" alt="..." height="800">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -99,7 +110,7 @@
         <!-- start gambar fasilitas 1 baris 1 -->
         <div class="col-md">
           <div class="card">
-              <img src="img1.jpg" class="card-img-top" alt="...">
+              <img src="Navigasi/img1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">T-Shirt</h5>
               </div>
@@ -109,7 +120,7 @@
         <!-- start gambar fasilitas 2 baris 1 -->
         <div class="col-md">
             <div class="card">
-                <img src="img2.webp" class="card-img-top" alt="...">
+                <img src="Navigasi/img2.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Hoodie</h5>
                 </div>
@@ -119,7 +130,7 @@
         <!-- start gambar fasilitas 3 baris 1 -->
         <div class="col-md">
             <div class="card">
-                <img src="img3.jpg" class="card-img-top" alt="...">
+                <img src="Navigasi/img3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Celana panjang</h5>
                 </div>
@@ -132,7 +143,7 @@
       <!-- start gambar fasilitas 1 baris 2 -->
       <div class="col-md">
         <div class="card">
-            <img src="img5.jpg" class="card-img-top" alt="..." height="500">
+            <img src="Navigasi/img5.jpg" class="card-img-top" alt="..." height="500">
             <div class="card-body">
                 <h5 class="card-title">Sepatu</h5>
             </div>
@@ -142,7 +153,7 @@
       <!-- start gambar fasilitas 2 baris 2 -->
       <div class="col-md">
         <div class="card">
-            <img src="img6.jpg" class="card-img-top" alt="..." height="500">
+            <img src="Navigasi/img6.jpg" class="card-img-top" alt="..." height="500">
             <div class="card-body">
                 <h5 class="card-title">jaket</h5>
             </div>
